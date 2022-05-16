@@ -1,6 +1,4 @@
-local M = {}
-
-M.base_30 = {
+local colors = {
    white = "#D3C6AA",
    darker_black = "#272f35",
    black = "#2b3339", --  nvim bg
@@ -34,43 +32,4 @@ M.base_30 = {
    folder_bg = "#7393b3",
 }
 
-M.base_16 = {
-   base00 = "#2b3339",
-   base01 = "#323c41",
-   base02 = "#3a4248",
-   base03 = "#868d80",
-   base04 = "#d3c6aa",
-   base05 = "#d3c6aa",
-   base06 = "#e9e8d2",
-   base07 = "#fff9e8",
-   base08 = "#7fbbb3",
-   base09 = "#d699b6",
-   base0A = "#83c092",
-   base0B = "#dbbc7f",
-   base0C = "#e69875",
-   base0D = "#a7c080",
-   base0E = "#e67e80",
-   base0F = "#e67e80",
-}
-
-M.polish_hl = {
-   TSPunctBracket = {
-      fg = M.base_30.red,
-   },
-
-   TSTag = {
-      fg = M.base_30.orange,
-   },
-
-   TSTagDelimiter = {
-      fg = M.base_30.green,
-   },
-
-   TSConstructor = {
-      fg = "#7fbbb3",
-   },
-}
-
-M = require("base46").override_theme(M, "everforest")
-
-return M
+return colors

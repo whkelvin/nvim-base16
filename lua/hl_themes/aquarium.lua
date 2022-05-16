@@ -1,6 +1,4 @@
-local M = {}
-
-M.base_30 = {
+local colors = {
    white = "#ced4df",
    darker_black = "#1a1a24",
    black = "#20202A", --  nvim bg
@@ -34,25 +32,4 @@ M.base_30 = {
    folder_bg = "#b8dceb",
 }
 
-M.base_16 = {
-   base00 = "#20202A",
-   base01 = "#2c2e3e",
-   base02 = "#3D4059",
-   base03 = "#313449",
-   base04 = "#63718b",
-   base05 = "#ced4df",
-   base06 = "#414560",
-   base07 = "#63718b",
-   base08 = "#ebb9b9",
-   base09 = "#e8cca7",
-   base0A = "#e6dfb8",
-   base0B = "#b1dba4",
-   base0C = "#b8dceb",
-   base0D = "#a3b8ef",
-   base0E = "#f6bbe7",
-   base0F = "#eAc1c1",
-}
-
-M = require("base46").override_theme(M, "aquarium")
-
-return M
+return colors
